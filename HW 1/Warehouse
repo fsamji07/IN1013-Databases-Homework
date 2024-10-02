@@ -1,0 +1,27 @@
+Bay (Entity):
+  Unique bay number PRIMARY KEY
+  Number of bins
+  Location
+  Height
+  Unique equipment number of fork lift FOREIGN KEY
+
+Bin (Entity):
+  Unique bay number FOREIGN KEY, COMPOSITE PRIMARY KEY
+  Number assigned within the bay COMPOSITE PRIMARY KEY
+  Size of bin
+  Maximum loaded weight
+  Number of items
+
+Fork lift (Entity):
+  Unique equipment number PRIMARY KEY
+  Maximum carrying weight
+  Type of fuel (petrol or electric)
+
+Item (Entity):
+  Unique number PRIMARY KEY
+  Date taken into warehouse
+  Item weight
+  Unique bay number FOREIGN KEY
+  Date stored in bin
+
+
