@@ -6,9 +6,9 @@ Animal (Entity):
   Diet
   Description
   Unique number of enclosure FOREIGN KEY
-  Start date in enclosure         
-	End date in enclosure
-	Note
+  Start date in enclosure
+  End date in enclosure
+  Note
 
 Enclosure (Entity):
 	Habitat type
