@@ -1,0 +1,30 @@
+Animal (Entity):
+  Unique ID PRIMARY KEY
+  Name
+  Name of species FOREIGN KEY
+  Date of birth
+  Diet
+  Description
+  Unique number of enclosure FOREIGN KEY
+  Start date in enclosure         
+	End date in enclosure
+	Note
+
+Enclosure (Entity):
+	Habitat type
+	Size
+	Main feature
+	Unique number PRIMARY KEY
+
+
+Compatibility (Entity):
+	Species A FOREIGN KEY, COMPOSITE PRIMARY KEY
+  Species B FOREIGN KEY, COMPOSITE PRIMARY KEY
+  Compatibility rating
+
+
+Species (Entity):
+  Name PRIMARY KEY
+  Description
+  Habitat type FOREIGN KEY
+
