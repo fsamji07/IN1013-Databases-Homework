@@ -5,7 +5,7 @@ CREATE TABLE petPet (
   species NVARCHAR(45) NOT NULL,
   gender NVARCHAR(1) NOT NULL,
   birth date NOT NULL,
-  death date NOT NULL,
+  death date,
   PRIMARY KEY petname
 );
 
